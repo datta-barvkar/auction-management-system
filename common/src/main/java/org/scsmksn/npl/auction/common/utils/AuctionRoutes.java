@@ -1,0 +1,42 @@
+package org.scsmksn.npl.auction.common.utils;
+
+public interface AuctionRoutes {
+    String LIST_TEAMS = "direct:ListTeams";
+    String LIST_ROLES = "direct:ListRoles";
+    String SAVE_ROLES = "direct:SaveRoles";
+    String SAVE_USER = "direct:SaveUser";
+    String LIST_USERS = "direct:ListUsers";;
+    String LIST_PLAYERS = "direct:ListPlayers";
+    String LIST_TEAM_OWNERS = "direct:ListTeamOwners";
+    String LIST_TEAM_ADMINS = "direct:ListTeamAdmins";
+    String LIST_STATS_ADMINS = "direct:ListStatsAdmins";
+    String GET_USER = "direct:GetUser";
+    String DELETE_USER = "direct:DeleteUser";
+    String LIST_UNAPPROVED = "direct:ListUnapproved";
+    String APPROVE_PLAYER = "direct:ApprovePlayer";
+    String GET_TEAM_APPROVAL = "direct:GetTeamApproval";
+    String GET_TEAM = "direct:GetTeam";
+    String SAVE_TEAM = "direct:SaveTeam";
+    String DELETE_TEAM = "direct:DeleteTeam";
+    String DELETE_ALL_TEAMS = "direct:DeleteAllTeams";
+    String DELETE_ALL_USERS = "direct:DeleteAllUsers";
+    String VALIDATE_USER = "direct:ValidateUser";
+    String GET_RESOURCE = "direct:GetResource";
+    String SAVE_RESOURCE = "direct:SaveResource";
+    String DELETE_RESOURCE = "direct:DeleteResource";
+    String GET_PROFILE = "direct:GetProfile";
+    String SAVE_PROFILE = "direct:SaveProfile";
+    String DELETE_PROFILE = "direct:DeleteProfile";
+    String UPDATE_PROFILE_ID_FOR_USER = "direct:UpdateProfileIdForUser";
+    String UPDATE_IMAGE_ID_FOR_USER = "direct:UpdateImageIdForUser";
+    String UPDATE_IMAGE_ID_FOR_TEAM = "direct:UpdateImageIdForTeam";
+    String GET_ACL_BY_OPERATION_AND_PATH = "direct:GetACLByOperationAndPath";
+    String LIST_MENUS_BY_ROLES = "direct:ListMenusByRoles";;
+    String LIST_ADMINS = "direct:ListAdmins";
+    String LIST_AUCTION_ADMINS = "direct:ListAuctionAdmins";
+    String LIST_AUCTIONEERS = "direct:ListAuctioneers";
+    String SAVE_MENUS = "direct:SaveMenus";
+    String USERNAME_EXISTS = "direct:UsernameExists";
+    String USER_EXISTS = "direct:UserExists";
+    String USER_HAS_ROLE = "direct:UserHasRole";
+}

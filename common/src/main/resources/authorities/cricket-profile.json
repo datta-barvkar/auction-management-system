@@ -1,0 +1,72 @@
+[
+  {
+    "name": "create-cricket-profile",
+    "operation": "create",
+    "group": "cricket-profile",
+    "pathPattern": "/player-management/cricket-profile",
+    "authorizedRoles": [
+      {
+        "id": 6,
+        "name": "Player"
+      }
+    ]
+  },
+  {
+    "name": "view-cricket-profile",
+    "operation": "read",
+    "group": "cricket-profile",
+    "pathPattern": "/player-management/cricket-profile/{cricketProfileId}",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      },
+      {
+        "id": 3,
+        "name": "Auctioneer"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      },
+      {
+        "id": 6,
+        "name": "Player"
+      }
+    ]
+  },
+  {
+    "name": "update-cricket-profile",
+    "operation": "update",
+    "group": "cricket-profile",
+    "pathPattern": "/player-management/cricket-profile/{cricketProfileId}",
+    "expression": "authManager.isSamePlayer(cricketProfileId)",
+    "authorizedRoles": [
+      {
+        "id": 6,
+        "name": "Player"
+      }
+    ]
+  },
+  {
+    "name": "delete-cricket-profile",
+    "operation": "delete",
+    "group": "cricket-profile",
+    "pathPattern": "/player-management/cricket-profile/{cricketProfileId}",
+    "expression": "authManager.isSamePlayer(cricketProfileId)",
+    "authorizedRoles": [
+      {
+        "id": 6,
+        "name": "Player"
+      }
+    ]
+  }
+]

@@ -1,0 +1,165 @@
+[
+  {
+    "name": "upload user image",
+    "operation": "create",
+    "group": "user-image",
+    "pathPattern": "/resource-management/user/{userId}/image",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      },
+      {
+        "id": 3,
+        "name": "Auctioneer"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      },
+      {
+        "id": 6,
+        "name": "Player"
+      }
+    ]
+  },
+  {
+    "name": "upload user image form",
+    "operation": "read",
+    "group": "user-image",
+    "pathPattern": "/resource-management/user/{userId}/image",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      },
+      {
+        "id": 3,
+        "name": "Auctioneer"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      },
+      {
+        "id": 6,
+        "name": "Player"
+      }
+    ]
+  },
+  {
+    "name": "update user image form",
+    "operation": "read",
+    "group": "user-image",
+    "pathPattern": "/resource-management/user/{userId}/image/{imageId}",
+    "expression": "authManager.isAdmin() || authManager.isSameUser(userId)",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      },
+      {
+        "id": 3,
+        "name": "Auctioneer"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      },
+      {
+        "id": 6,
+        "name": "Player"
+      }
+    ]
+  },
+  {
+    "name": "update user image",
+    "operation": "update",
+    "group": "user-image",
+    "pathPattern": "/resource-management/user/{userId}/image/{imageId}",
+    "expression": "authManager.isAdmin() || authManager.isSameUser(userId)",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      },
+      {
+        "id": 3,
+        "name": "Auctioneer"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      },
+      {
+        "id": 6,
+        "name": "Player"
+      }
+    ]
+  },
+  {
+    "name": "delete user image",
+    "operation": "delete",
+    "group": "user-image",
+    "pathPattern": "/resource-management/user/{userId}/image/{imageId}",
+    "expression": "authManager.isAdmin() || authManager.isSameUser(userId)",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      },
+      {
+        "id": 3,
+        "name": "Auctioneer"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      },
+      {
+        "id": 6,
+        "name": "Player"
+      }
+    ]
+  }
+]

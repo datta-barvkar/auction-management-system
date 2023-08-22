@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NPL - Register User</title>
+</head>
+<body>
+<div align="center">
+    <form action="#" th:action="@{/npl/userManagement/register}" method="post" th:object="${user}">
+        <table border="0">
+            <tbody>
+                <tr>
+                    <th colspan="2"><h1>User Registration</h1></th>
+                </tr>
+                <tr>
+                    <th align="right"><label>First name:</label></th>
+                    <td><input type="text" th:field="*{firstName}" /></td>
+                </tr>
+                <tr>
+                    <th align="right"><label>Middle name:</label></th>
+                    <td><input type="text" th:field="*{middleName}" /></td>
+                </tr>
+                <tr>
+                    <th align="right"><label>Last name:</label></th>
+                    <td><input type="text" th:field="*{lastName}" /></td>
+                </tr>
+                <tr>
+                    <th align="right"><label>Password:</label></th>
+                    <td><input type="password" th:field="*{password}" /></td>
+                </tr>
+                <tr>
+                    <th align="right"><label>E-Mail:</label></th>
+                    <td><input type="text" th:field="*{email}" /></td>
+                </tr>
+                <tr>
+                    <th align="right"><label>Phone Number:</label></th>
+                    <td><input type="text" th:field="*{phoneNumber}" /></td>
+                </tr>
+                <tr>
+                    <th align="right"><label>Birthdate:</label></th>
+                    <td><input type="date" th:field="*{birthdate}" /></td>
+                </tr>
+                <tr>
+                    <th align="right"><label>Gender:</label></th>
+                    <td><input type="radio" th:field="*{gender}" value="Male" />Male
+                        <input type="radio" th:field="*{gender}" value="Female" />Female
+                        <input type="radio" th:field="*{gender}" value="Other" />Other</td>
+                </tr>
+                <tr>
+                    <th align="right"><label>Profession:</label></th>
+                    <td><select th:field="*{profession}">
+                        <option th:each="p : ${professions}" th:value="${p}" th:text="${p}" />
+                    </select></td>
+                </tr>
+                <tr>
+                    <th align="right"><label>Marital Status:</label></th>
+                    <td><input type="radio" th:field="*{maritalStatus}" value="Married" />Married
+                        <input type="radio" th:field="*{maritalStatus}" value="Unmarried" />Unmarried</td>
+                </tr>
+                <tr>
+                    <th align="right"><label>More Details:</label></th>
+                    <td><textarea rows="5" cols="25" th:field="*{moreDetails}"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><button type="submit">Register</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+</body>
+</html>

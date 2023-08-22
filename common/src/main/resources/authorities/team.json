@@ -1,0 +1,124 @@
+[
+  {
+    "name": "create team",
+    "operation": "create",
+    "group": "team",
+    "pathPattern": "/team-management/team",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      }
+    ]
+  },
+  {
+    "name": "view teams",
+    "operation": "read",
+    "group": "team",
+    "pathPattern": "/team-management/team",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      },
+      {
+        "id": 3,
+        "name": "Auctioneer"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      },
+      {
+        "id": 6,
+        "name": "Player"
+      }
+    ]
+  },
+  {
+    "name": "view team",
+    "operation": "read",
+    "group": "team",
+    "pathPattern": "/team-management/team/{teamId}",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      },
+      {
+        "id": 3,
+        "name": "Auctioneer"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      },
+      {
+        "id": 6,
+        "name": "Player"
+      }
+    ]
+  },
+  {
+    "name": "update team",
+    "operation": "update",
+    "group": "team",
+    "pathPattern": "/team-management/team/{teamId}",
+    "expression": "authManager.isAdmin() || authManager.isRealOwnerOrTeamAdmin(teamId)",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      }
+    ]
+  },
+  {
+    "name": "delete team",
+    "operation": "delete",
+    "group": "team",
+    "pathPattern": "/team-management/team/{teamId}",
+    "expression": "authManager.isAdmin() || authManager.isRealOwnerOrTeamAdmin(teamId)",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      }
+    ]
+  }
+]

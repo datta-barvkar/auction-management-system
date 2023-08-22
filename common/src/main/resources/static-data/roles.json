@@ -1,0 +1,30 @@
+[
+  {
+	"id": 1,
+	"name": "Admin"
+  },
+  {
+	"id": 2,
+	"name": "AuctionAdmin"
+  },
+  {
+	"id": 3,
+	"name": "Auctioneer"
+  },
+  {
+	"id": 4,
+	"name": "TeamOwner"
+  },
+  {
+	"id": 5,
+	"name": "TeamAdmin"
+  },
+  {
+	"id": 6,
+	"name": "StatsAdmin"
+  },
+  {
+	"id": 7,
+	"name": "Player"
+  }
+]

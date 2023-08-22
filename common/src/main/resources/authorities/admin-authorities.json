@@ -1,0 +1,162 @@
+[
+	{
+		"name": "admin-home",
+		"operation": "read",
+		"group": "admin",
+		"pathPattern": "/admin-management/home",
+		"failureMessage": "You are not authorized to view Administrative Home Page!",
+		"authorizedRoles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			}
+		]
+	},
+	{
+		"name": "view-admins",
+		"operation": "read",
+		"group": "admin",
+		"pathPattern": "/admin-management/admin",
+		"failureMessage": "You are not authorized to view List of All Admins!",
+		"authorizedRoles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			}
+		]
+	},
+	{
+		"name": "view-admin",
+		"operation": "read",
+		"group": "admin",
+		"pathPattern": "/admin-management/admin/{adminId}",
+		"failureMessage": "You are not authorized to view the details Admin!",
+		"authorizedRoles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			}
+		]
+	},
+	{
+		"name": "edit-admin",
+		"operation": "update",
+		"group": "admin",
+		"pathPattern": "/admin-management/admin/{adminId}",
+		"expression": "authManager.isSameUser(adminId)",
+		"failureMessage": "You are not authorized to edit the details for Admin!",
+		"authorizedRoles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			}
+		]
+	},
+	{
+		"name": "upload-admin-image",
+		"operation": "create",
+		"group": "admin",
+		"pathPattern": "/admin-management/admin/{adminId}/image",
+		"expression": "authManager.isSameUser(adminId)",
+		"failureMessage": "You are not authorized to upload the image for Admin!",
+		"authorizedRoles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			}
+		]
+	},
+	{
+		"name": "change-admin-image",
+		"operation": "update",
+		"group": "admin",
+		"pathPattern": "/admin-management/admin/{adminId}/image/{imageId}",
+		"expression": "authManager.isSameUser(adminId)",
+		"failureMessage": "You are not authorized to change the image for Admin!",
+		"authorizedRoles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			}
+		]
+	},
+	{
+		"name": "change-admin-password",
+		"operation": "update",
+		"group": "admin",
+		"pathPattern": "/admin-management/admin/{adminId}/password",
+		"expression": "authManager.isSameUser(adminId)",
+		"failureMessage": "You are not authorized to change the password for Admin!",
+		"authorizedRoles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			}
+		]
+	},
+	{
+		"name": "add-user",
+		"operation": "create",
+		"group": "admin",
+		"pathPattern": "/admin-management/user",
+		"failureMessage": "You are not authorized to add new user!",
+		"authorizedRoles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			}
+		]
+	},
+	{
+		"name": "view-app-images",
+		"operation": "read",
+		"group": "admin",
+		"pathPattern": "/admin-management/resource/image",
+		"failureMessage": "You are not authorized to view Application Images!",
+		"authorizedRoles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			}
+		]
+	},
+	{
+		"name": "view-app-image",
+		"operation": "read",
+		"group": "admin",
+		"pathPattern": "/admin-management/resource/image/{imageId}",
+		"failureMessage": "You are not authorized to view Application Image!",
+		"authorizedRoles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			}
+		]
+	},
+	{
+		"name": "edit-app-image",
+		"operation": "update",
+		"group": "admin",
+		"pathPattern": "/admin-management/resource/image/{imageId}",
+		"failureMessage": "You are not authorized to edit Application Image!",
+		"authorizedRoles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			}
+		]
+	},
+	{
+		"name": "add-app-image",
+		"operation": "create",
+		"group": "admin",
+		"pathPattern": "/admin-management/resource/image",
+		"failureMessage": "You are not authorized to add Application Image!",
+		"authorizedRoles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			}
+		]
+	}
+]

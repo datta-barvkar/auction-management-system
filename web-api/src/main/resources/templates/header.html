@@ -1,0 +1,15 @@
+<div style="width: 100%">
+    <table width="100%">
+        <tbody>
+            <tr>
+                <th><img src="../static/images/logo.png"></th>
+                <th>${appName}</th>
+                <th><% if (loggedInUser != null) {
+                        out.println("Hello Guest! Please <a href=''>login</a>.")
+                    } else {
+                        out.println("Hello " + loggedInUser + "! <a href=''>Logout</a>.")
+                    }%></th>
+            </tr>
+        </tbody>
+    </table>
+</div>

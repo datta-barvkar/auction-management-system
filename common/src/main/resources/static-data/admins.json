@@ -1,0 +1,50 @@
+[
+  {
+    "firstName": "Dattatraya",
+    "middleName": "Ganpat",
+    "lastName": "Baravkar",
+    "email": "baravkar.datta@gmail.com",
+    "phoneNumber": "+919764339151",
+    "gender": "Male",
+    "maritalStatus": "Married",
+    "credentials": {
+      "username": "dabaravk",
+      "password": "Datz@100786"
+    },
+    "userRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 6,
+        "name": "Player"
+      }
+    ],
+    "birthdate": "1986-11-20"
+  },
+  {
+    "firstName": "Ajinkya",
+    "middleName": "Machindra",
+    "lastName": "Chaudhari",
+    "email": "ajinkya.chaudhari@gmail.com",
+    "phoneNumber": "+919049933005",
+    "gender": "Male",
+    "maritalStatus": "Unarried",
+    "credentials": {
+      "username": "ajchaudh",
+      "password": "Aju@100786"
+    },
+    "userRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 6,
+        "name": "Player"
+      }
+    ],
+    "birthdate": "1998-10-16"
+  }
+]

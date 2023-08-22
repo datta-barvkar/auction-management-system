@@ -1,0 +1,107 @@
+[
+  {
+    "name": "upload team image",
+    "operation": "create",
+    "group": "team-image",
+    "pathPattern": "/resource-management/team/{teamId}/image",
+    "expression": "authManager.isAdmin() || authManager.isRealOwnerOrTeamAdmin(teamId)",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      }
+    ]
+  },
+  {
+    "name": "upload team image form",
+    "operation": "read",
+    "group": "team-image",
+    "pathPattern": "/resource-management/team/{teamId}/image",
+    "expression": "authManager.isAdmin() || authManager.isRealOwnerOrTeamAdmin(teamId)",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      }
+    ]
+  },
+  {
+    "name": "update team image form",
+    "operation": "read",
+    "group": "team-image",
+    "pathPattern": "/resource-management/team/{teamId}/image/{imageId}",
+    "expression": "authManager.isAdmin() || authManager.isRealOwnerOrTeamAdmin(teamId)",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      }
+    ]
+  },
+  {
+    "name": "update team image",
+    "operation": "update",
+    "group": "team-image",
+    "pathPattern": "/resource-management/team/{teamId}/image/{imageId}",
+    "expression": "authManager.isAdmin() || authManager.isRealOwnerOrTeamAdmin(teamId)",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      }
+    ]
+  },
+  {
+    "name": "delete team image",
+    "operation": "delete",
+    "group": "team-image",
+    "pathPattern": "/resource-management/team/{teamId}/image/{imageId}",
+    "expression": "authManager.isAdmin() || authManager.isRealOwnerOrTeamAdmin(teamId)",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      }
+    ]
+  }
+]

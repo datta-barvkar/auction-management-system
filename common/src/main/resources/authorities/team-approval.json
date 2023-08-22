@@ -1,0 +1,35 @@
+[
+  {
+    "name": "approve player",
+    "operation": "update",
+    "group": "approval",
+    "pathPattern": "/approval-management/approval/{approvalId}",
+    "expression": "authManager.isAdmin() || authManager.isRealOwnerForApproval(approvalId)",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      }
+    ]
+  },
+  {
+    "name": "view team approvals",
+    "operation": "read",
+    "group": "approval",
+    "pathPattern": "/approval-management/approval",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      }
+    ]
+  }
+]

@@ -1,0 +1,124 @@
+[
+  {
+    "name": "create user",
+    "operation": "create",
+    "group": "user",
+    "pathPattern": "/user-management/user",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      }
+    ]
+  },
+  {
+    "name": "view users",
+    "operation": "read",
+    "group": "user",
+    "pathPattern": "/user-management/user",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      },
+      {
+        "id": 3,
+        "name": "Auctioneer"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      },
+      {
+        "id": 6,
+        "name": "Player"
+      }
+    ]
+  },
+  {
+    "name": "view user",
+    "operation": "read",
+    "group": "user",
+    "pathPattern": "/user-management/user/{userId}",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      },
+      {
+        "id": 3,
+        "name": "Auctioneer"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      },
+      {
+        "id": 6,
+        "name": "Player"
+      }
+    ]
+  },
+  {
+    "name": "update user",
+    "operation": "update",
+    "group": "user",
+    "pathPattern": "/user-management/user/{userId}",
+    "expression": "authManager.isAdmin() || authManager.isSameUser(userId)",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      },
+      {
+        "id": 3,
+        "name": "Auctioneer"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      },
+      {
+        "id": 6,
+        "name": "Player"
+      }
+    ]
+  },
+  {
+    "name": "delete user",
+    "operation": "delete",
+    "group": "user",
+    "pathPattern": "/user-management/user/{userId}",
+    "expression": "authManager.isAdmin() || authManager.isSameUser(userId) || authManager.notLastAdmin()",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      }
+    ]
+  }
+]

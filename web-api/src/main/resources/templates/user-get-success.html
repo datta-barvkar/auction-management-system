@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NPL - User Details</title>
+</head>
+<body>
+<div align="center">
+    <table border="0">
+        <tbody>
+            <tr><th colspan="2"><h2>User Details!</h2></th></tr>
+            <tr><th align="right">User Id:</th><td><span th:text="${user.id}"></span></td></tr>
+            <tr><th align="right">Full name:</th><td><span th:text="${user.fullName}"></span></td></tr>
+            <tr><th align="right">E-mail:</th><td><span th:text="${user.email}"></span></td></tr>
+            <tr><th align="right">Phone Number:</th><td><span th:text="${user.phoneNumber}"></span></td></tr>
+            <tr><th align="right">Birthdate:</th><td><span th:text="${user.birthdate}"></span></td></tr>
+            <tr><th align="right">Gender:</th><td><span th:text="${user.gender}"></span></td></tr>
+            <tr><th align="right">Profession:</th><td><span th:text="${user.profession}"></span></td></tr>
+            <tr><th align="right">Marital Status:</th><td><span th:text="${user.maritalStatus}"></span></td></tr>
+            <tr><th align="right">More Details:</th><td><span th:text="${user.moreDetails}"></span></td></tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

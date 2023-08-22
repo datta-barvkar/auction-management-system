@@ -1,0 +1,118 @@
+[
+  {
+    "name": "create-auction",
+    "operation": "create",
+    "group": "auction",
+    "pathPattern": "/auction-management/auction",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      }
+    ]
+  },
+  {
+    "name": "read-auctions",
+    "operation": "read",
+    "group": "auction",
+    "pathPattern": "/auction-management/auction",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      },
+      {
+        "id": 3,
+        "name": "Auctioneer"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      },
+      {
+        "id": 6,
+        "name": "Player"
+      }
+    ]
+  },
+  {
+    "name": "read-auction",
+    "operation": "read",
+    "group": "auction",
+    "pathPattern": "/auction-management/auction/*",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      },
+      {
+        "id": 3,
+        "name": "Auctioneer"
+      },
+      {
+        "id": 4,
+        "name": "TeamOwner"
+      },
+      {
+        "id": 5,
+        "name": "TeamAdmin"
+      },
+      {
+        "id": 6,
+        "name": "Player"
+      }
+    ]
+  },
+  {
+    "name": "update-auction",
+    "operation": "update",
+    "group": "auction",
+    "pathPattern": "/auction-management/auction/*",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      },
+      {
+        "id": 3,
+        "name": "Auctioneer"
+      }
+    ]
+  },
+  {
+    "name": "delete-auction",
+    "operation": "delete",
+    "group": "auction",
+    "pathPattern": "/auction-management/auction/*",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      }
+    ]
+  }
+]

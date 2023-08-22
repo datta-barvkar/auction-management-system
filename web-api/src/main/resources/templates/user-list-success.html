@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NPL - All Users</title>
+</head>
+<body>
+<div>
+    <table border="0">
+        <tbody>
+            <tr>
+                <th colspan="8">
+                    <h1>NPL - All Users</h1>
+                </th>
+            </tr>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>E-Mail</th>
+                <th>Phone Number</th>
+                <th>Gender</th>
+                <th>Profession</th>
+                <th>Marital Status</th>
+                <th>Operations</th>
+            </tr>
+            <tr th:each="user: ${users}">
+                <td>
+                    <a th:href="@{'/npl/userManagement/user/' + ${user.id}}" th:text="${user.id}"></a>
+                </td>
+                <td>
+                    <span th:text="${user.fullName}"></span>
+                </td>
+                <td>
+                    <span th:text="${user.email}"></span>
+                </td>
+                <td>
+                    <span th:text="${user.phoneNumber}"></span>
+                </td>
+                <td>
+                    <span th:text="${user.gender}"></span>
+                </td>
+                <td>
+                    <span th:text="${user.profession}"></span>
+                </td>
+                <td>
+                    <span th:text="${user.maritalStatus}"></span>
+                </td>
+                <td>
+                    <a th:href="@{'/npl/userManagement/user/' + ${user.id}} + '?mode=1'">Edit</a>
+                    <a th:href="@{'/npl/userManagement/user/' + ${user.id}} + '?mode=2'">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

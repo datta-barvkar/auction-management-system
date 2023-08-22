@@ -1,0 +1,1493 @@
+[
+	{
+		"name": "home",
+		"value": "Home",
+		"uriTemplate": "/home",
+		"roles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			},
+			{
+				"id": 2,
+				"name": "AuctionAdmin"
+			},
+			{
+				"id": 3,
+				"name": "Auctioneer"
+			},
+			{
+				"id": 4,
+				"name": "TeamOwner"
+			},
+			{
+				"id": 5,
+				"name": "TeamAdmin"
+			},
+			{
+				"id": 6,
+				"name": "StatsAdmin"
+			},
+			{
+				"id": 7,
+				"name": "Player"
+			}
+		]
+	},
+	{
+		"name": "admin-home",
+		"value": "Administrative",
+		"uriTemplate": "/admin-management/home",
+		"roles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			}
+		],
+		"subMenus": [
+			{
+				"name": "view-admins",
+				"value": "View admins",
+				"uriTemplate": "/admin-management/admin",
+				"roles": [
+					{
+						"id": 1,
+						"name": "Admin"
+					}
+				],
+				"subMenus": [
+					{
+						"name": "view-admin",
+						"value": "View Admin",
+						"uriTemplate": "/admin-management/admin/{adminId}",
+						"visible": false,
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							}
+						],
+						"subMenus": [
+							{
+								"name": "upload-admin-image",
+								"value": "Upload Admin Image",
+								"uriTemplate": "/admin-management/admin/{adminId}/image",
+								"visible": false,
+								"roles": [
+									{
+										"id": 1,
+										"name": "Admin"
+									}
+								]
+							},
+							{
+								"name": "change-admin-image",
+								"value": "Change Admin Image",
+								"uriTemplate": "/admin-management/admin/{adminId}/image/{imageId}",
+								"visible": false,
+								"roles": [
+									{
+										"id": 1,
+										"name": "Admin"
+									}
+								]
+							},
+							{
+								"name": "change-admin-password",
+								"value": "Change Admin Password",
+								"uriTemplate": "/admin-management/admin/{adminId}/password",
+								"visible": false,
+								"roles": [
+									{
+										"id": 1,
+										"name": "Admin"
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "edit-admin",
+						"value": "Edit Admin",
+						"uriTemplate": "/admin-management/admin/{adminId}",
+						"visible": false,
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "add-user",
+				"value": "Add User",
+				"uriTemplate": "/admin-management/user",
+				"roles": [
+					{
+						"id": 1,
+						"name": "Admin"
+					}
+				]
+			},
+			{
+				"name": "app-images",
+				"value": "Application Images",
+				"uriTemplate": "/admin-management/resource/image",
+				"roles": [
+					{
+						"id": 1,
+						"name": "Admin"
+					}
+				],
+				"subMenus": [
+					{
+						"name": "view-app-image",
+						"value": "Application Image",
+						"uriTemplate": "/admin-management/resource/image/{imageId}",
+						"visible": false,
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							}
+						]
+					},
+					{
+						"name": "edit-app-image",
+						"value": "Change Application Image",
+						"uriTemplate": "/admin-management/resource/image/{imageId}",
+						"visible": false,
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "upload-app-image",
+				"value": "Upload Application Image",
+				"uriTemplate": "/admin-management/resource/image",
+				"roles": [
+					{
+						"id": 1,
+						"name": "Admin"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "auctions-home",
+		"value": "Auctions",
+		"uriTemplate": "/auction-management/home",
+		"roles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			},
+			{
+				"id": 2,
+				"name": "AuctionAdmin"
+			},
+			{
+				"id": 3,
+				"name": "Auctioneer"
+			},
+			{
+				"id": 4,
+				"name": "TeamOwner"
+			},
+			{
+				"id": 5,
+				"name": "TeamAdmin"
+			},
+			{
+				"id": 6,
+				"name": "StatsAdmin"
+			},
+			{
+				"id": 7,
+				"name": "Player"
+			}
+		],
+		"subMenus": [
+			{
+				"name": "view-auctions",
+				"value": "View Auctions",
+				"uriTemplate": "/auction-management/auction",
+				"roles": [
+					{
+						"id": 1,
+						"name": "Admin"
+					},
+					{
+						"id": 2,
+						"name": "AuctionAdmin"
+					},
+					{
+						"id": 3,
+						"name": "Auctioneer"
+					},
+					{
+						"id": 4,
+						"name": "TeamOwner"
+					},
+					{
+						"id": 5,
+						"name": "TeamAdmin"
+					},
+					{
+						"id": 6,
+						"name": "StatsAdmin"
+					},
+					{
+						"id": 7,
+						"name": "Player"
+					}
+				],
+				"subMenus": [
+					{
+						"name": "view-auction",
+						"value": "View Auction",
+						"uriTemplate": "/auction-management/auction/{auctionId}",
+						"visible": false,
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							},
+							{
+								"id": 2,
+								"name": "AuctionAdmin"
+							},
+							{
+								"id": 3,
+								"name": "Auctioneer"
+							},
+							{
+								"id": 4,
+								"name": "TeamOwner"
+							},
+							{
+								"id": 5,
+								"name": "TeamAdmin"
+							},
+							{
+								"id": 6,
+								"name": "StatsAdmin"
+							},
+							{
+								"id": 7,
+								"name": "Player"
+							}
+						],
+						"subMenus": [
+							{
+								"name": "upload-auction-image",
+								"value": "Upload Auction Image",
+								"uriTemplate": "/auction-management/auction/{auctionId}/image",
+								"visible": false,
+								"roles": [
+									{
+										"id": 1,
+										"name": "Admin"
+									},
+									{
+										"id": 2,
+										"name": "AuctionAdmin"
+									}
+								]
+							},
+							{
+								"name": "change-auction-image",
+								"value": "Change Auction Image",
+								"uriTemplate": "/auction-management/auction/{auctionId}/image/{imageId}",
+								"visible": false,
+								"roles": [
+									{
+										"id": 1,
+										"name": "Admin"
+									},
+									{
+										"id": 2,
+										"name": "AuctionAdmin"
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "edit-auction",
+						"value": "Edit Auction",
+						"uriTemplate": "/auction-management/auction/{auctionId}",
+						"visible": false,
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							},
+							{
+								"id": 2,
+								"name": "AuctionAdmin"
+							},
+							{
+								"id": 3,
+								"name": "Auctioneer"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "add-auction",
+				"value": "Add Auction",
+				"uriTemplate": "/auction-management/auction",
+				"roles": [
+					{
+						"id": 1,
+						"name": "Admin"
+					},
+					{
+						"id": 2,
+						"name": "AuctionAdmin"
+					}
+				]
+			},
+			{
+				"name": "view-auction-admins",
+				"value": "View Auction Admins",
+				"uriTemplate": "/auction-management/admin",
+				"roles": [
+					{
+						"id": 1,
+						"name": "Admin"
+					},
+					{
+						"id": 2,
+						"name": "AuctionAdmin"
+					},
+					{
+						"id": 3,
+						"name": "Auctioneer"
+					},
+					{
+						"id": 4,
+						"name": "TeamOwner"
+					},
+					{
+						"id": 5,
+						"name": "TeamAdmin"
+					},
+					{
+						"id": 6,
+						"name": "StatsAdmin"
+					},
+					{
+						"id": 7,
+						"name": "Player"
+					}
+				],
+				"subMenus": [
+					{
+						"name": "view-auction-admin",
+						"value": "View Admin",
+						"uriTemplate": "/auction-management/admin/{adminId}",
+						"visible": false,
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							},
+							{
+								"id": 2,
+								"name": "AuctionAdmin"
+							},
+							{
+								"id": 3,
+								"name": "Auctioneer"
+							},
+							{
+								"id": 4,
+								"name": "TeamOwner"
+							},
+							{
+								"id": 5,
+								"name": "TeamAdmin"
+							},
+							{
+								"id": 6,
+								"name": "StatsAdmin"
+							},
+							{
+								"id": 7,
+								"name": "Player"
+							}
+						],
+						"subMenus": [
+							{
+								"name": "upload-auction-admin-image",
+								"value": "Upload Auction Admin Image",
+								"uriTemplate": "/auction-management/admin/{adminId}/image",
+								"visible": false,
+								"roles": [
+									{
+										"id": 2,
+										"name": "AuctionAdmin"
+									}
+								]
+							},
+							{
+								"name": "change-auction-admin-image",
+								"value": "Change Auction Admin Image",
+								"uriTemplate": "/auction-management/admin/{adminId}/image/{imageId}",
+								"visible": false,
+								"roles": [
+									{
+										"id": 2,
+										"name": "AuctionAdmin"
+									}
+								]
+							},
+							{
+								"name": "change-auction-admin-password",
+								"value": "Change Auction Admin Password",
+								"uriTemplate": "/auction-management/admin/{adminId}/password",
+								"visible": false,
+								"roles": [
+									{
+										"id": 2,
+										"name": "AuctionAdmin"
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "edit-auction-admin",
+						"value": "Edit Admin",
+						"uriTemplate": "/auction-management/admin/{adminId}",
+						"visible": false,
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							},
+							{
+								"id": 2,
+								"name": "AuctionAdmin"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "add-auction-admin",
+				"value": "Add Auction Admin",
+				"uriTemplate": "/auction-management/admin",
+				"roles": [
+					{
+						"id": 1,
+						"name": "Admin"
+					},
+					{
+						"id": 2,
+						"name": "AuctionAdmin"
+					}
+				]
+			},
+			{
+				"name": "view-auctioneers",
+				"value": "View Auctioneers",
+				"uriTemplate": "/auction-management/auctioneer",
+				"roles": [
+					{
+						"id": 1,
+						"name": "Admin"
+					},
+					{
+						"id": 2,
+						"name": "AuctionAdmin"
+					},
+					{
+						"id": 3,
+						"name": "Auctioneer"
+					},
+					{
+						"id": 4,
+						"name": "TeamOwner"
+					},
+					{
+						"id": 5,
+						"name": "TeamAdmin"
+					},
+					{
+						"id": 6,
+						"name": "StatsAdmin"
+					},
+					{
+						"id": 7,
+						"name": "Player"
+					}
+				],
+				"subMenus": [
+					{
+						"name": "view-auctioneer",
+						"value": "View Auctioneer",
+						"uriTemplate": "/auction-management/auctioneer/{auctioneerId}",
+						"visible": false,
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							},
+							{
+								"id": 2,
+								"name": "AuctionAdmin"
+							},
+							{
+								"id": 3,
+								"name": "Auctioneer"
+							},
+							{
+								"id": 4,
+								"name": "TeamOwner"
+							},
+							{
+								"id": 5,
+								"name": "TeamAdmin"
+							},
+							{
+								"id": 6,
+								"name": "StatsAdmin"
+							},
+							{
+								"id": 7,
+								"name": "Player"
+							}
+						],
+						"subMenus": [
+							{
+								"name": "upload-auctioneer-image",
+								"value": "Upload Auctioneer Image",
+								"uriTemplate": "/auction-management/auctioneer/{adminId}/image",
+								"visible": false,
+								"roles": [
+									{
+										"id": 3,
+										"name": "Auctioneer"
+									}
+								]
+							},
+							{
+								"name": "change-auctioneer-image",
+								"value": "Change Auctioneer Image",
+								"uriTemplate": "/auction-management/auctioneer/{adminId}/image/{imageId}",
+								"visible": false,
+								"roles": [
+									{
+										"id": 3,
+										"name": "Auctioneer"
+									}
+								]
+							},
+							{
+								"name": "change-auctioneer-password",
+								"value": "Change Auctioneer Password",
+								"uriTemplate": "/auction-management/auctioneer/{adminId}/password",
+								"visible": false,
+								"roles": [
+									{
+										"id": 3,
+										"name": "Auctioneer"
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "edit-auctioneer",
+						"value": "Edit Auctioneer",
+						"uriTemplate": "/auction-management/auctioneer/{auctioneerId}",
+						"visible": false,
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							},
+							{
+								"id": 2,
+								"name": "AuctionAdmin"
+							},
+							{
+								"id": 3,
+								"name": "Auctioneer"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "add-auctioneer",
+				"value": "Add Auctioneer",
+				"uriTemplate": "/auction-management/auctioneer",
+				"roles": [
+					{
+						"id": 2,
+						"name": "AuctionAdmin"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "teams-home",
+		"value": "Teams",
+		"uriTemplate": "/team-management/home",
+		"roles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			},
+			{
+				"id": 2,
+				"name": "AuctionAdmin"
+			},
+			{
+				"id": 3,
+				"name": "Auctioneer"
+			},
+			{
+				"id": 4,
+				"name": "TeamOwner"
+			},
+			{
+				"id": 5,
+				"name": "TeamAdmin"
+			},
+			{
+				"id": 6,
+				"name": "StatsAdmin"
+			},
+			{
+				"id": 7,
+				"name": "Player"
+			}
+		],
+		"subMenus": [
+			{
+				"name": "view-teams",
+				"value": "View Teams",
+				"uriTemplate": "/team-management/team",
+				"roles": [
+					{
+						"id": 1,
+						"name": "Admin"
+					},
+					{
+						"id": 2,
+						"name": "AuctionAdmin"
+					},
+					{
+						"id": 3,
+						"name": "Auctioneer"
+					},
+					{
+						"id": 4,
+						"name": "TeamOwner"
+					},
+					{
+						"id": 5,
+						"name": "TeamAdmin"
+					},
+					{
+						"id": 6,
+						"name": "StatsAdmin"
+					},
+					{
+						"id": 7,
+						"name": "Player"
+					}
+				],
+				"subMenus": [
+					{
+						"name": "view-team",
+						"value": "View Team",
+						"uriTemplate": "/team-management/team/{teamId}",
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							},
+							{
+								"id": 2,
+								"name": "AuctionAdmin"
+							},
+							{
+								"id": 3,
+								"name": "Auctioneer"
+							},
+							{
+								"id": 4,
+								"name": "TeamOwner"
+							},
+							{
+								"id": 5,
+								"name": "TeamAdmin"
+							},
+							{
+								"id": 6,
+								"name": "StatsAdmin"
+							},
+							{
+								"id": 7,
+								"name": "Player"
+							}
+						],
+						"visible": false,
+						"subMenus": [
+							{
+								"name": "upload-team-image",
+								"value": "Upload Team Image",
+								"uriTemplate": "/team-management/team/{teamId}/image",
+								"visible": false,
+								"roles": [
+									{
+										"id": 4,
+										"name": "TeamOwner"
+									},
+									{
+										"id": 5,
+										"name": "TeamAdmin"
+									}
+								]
+							},
+							{
+								"name": "change-team-image",
+								"value": "Change Team Image",
+								"uriTemplate": "/team-management/team/{teamId}/image/{imageId}",
+								"visible": false,
+								"roles": [
+									{
+										"id": 4,
+										"name": "TeamOwner"
+									},
+									{
+										"id": 5,
+										"name": "TeamAdmin"
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "edit-team",
+						"value": "Edit Team",
+						"uriTemplate": "/team-management/team/{teamId}",
+						"visible": false,
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							},
+							{
+								"id": 4,
+								"name": "TeamOwner"
+							},
+							{
+								"id": 5,
+								"name": "TeamAdmin"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "add-team",
+				"value": "Add Team",
+				"uriTemplate": "/team-management/team",
+				"roles": [
+					{
+						"id": 1,
+						"name": "Admin"
+					},
+					{
+						"id": 4,
+						"name": "TeamOwner"
+					},
+					{
+						"id": 5,
+						"name": "TeamAdmin"
+					}
+				]
+			},
+			{
+				"name": "view-team-owners",
+				"value": "View Owners",
+				"uriTemplate": "/team-management/owner",
+				"roles": [
+					{
+						"id": 1,
+						"name": "Admin"
+					},
+					{
+						"id": 2,
+						"name": "AuctionAdmin"
+					},
+					{
+						"id": 3,
+						"name": "Auctioneer"
+					},
+					{
+						"id": 4,
+						"name": "TeamOwner"
+					},
+					{
+						"id": 5,
+						"name": "TeamAdmin"
+					},
+					{
+						"id": 6,
+						"name": "StatsAdmin"
+					},
+					{
+						"id": 7,
+						"name": "Player"
+					}
+				],
+				"subMenus": [
+					{
+						"name": "view-owner",
+						"value": "View Owner",
+						"uriTemplate": "/team-management/owner/{ownerId}",
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							},
+							{
+								"id": 2,
+								"name": "AuctionAdmin"
+							},
+							{
+								"id": 3,
+								"name": "Auctioneer"
+							},
+							{
+								"id": 4,
+								"name": "TeamOwner"
+							},
+							{
+								"id": 5,
+								"name": "TeamAdmin"
+							},
+							{
+								"id": 6,
+								"name": "StatsAdmin"
+							},
+							{
+								"id": 7,
+								"name": "Player"
+							}
+						],
+						"visible": false,
+						"subMenus": [
+							{
+								"name": "upload-team-owner-image",
+								"value": "Upload Owner Image",
+								"uriTemplate": "/team-management/owner/{ownerId}/image",
+								"visible": false,
+								"roles": [
+									{
+										"id": 4,
+										"name": "TeamOwner"
+									}
+								]
+							},
+							{
+								"name": "change-team-owner-image",
+								"value": "Change Owner Image",
+								"uriTemplate": "/team-management/owner/{ownerId}/image/{imageId}",
+								"visible": false,
+								"roles": [
+									{
+										"id": 4,
+										"name": "TeamOwner"
+									}
+								]
+							},
+							{
+								"name": "change-team-owner-password",
+								"value": "Change Team Owner Password",
+								"uriTemplate": "/team-management/owner/{ownerId}/password",
+								"visible": false,
+								"roles": [
+									{
+										"id": 4,
+										"name": "TeamOwner"
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "edit-owner",
+						"value": "Edit Owner",
+						"uriTemplate": "/team-management/owner/{ownerId}",
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							},
+							{
+								"id": 4,
+								"name": "TeamOwner"
+							},
+							{
+								"id": 5,
+								"name": "TeamAdmin"
+							}
+						],
+						"visible": false
+					}
+				]
+			},
+			{
+				"name": "add-team-owner",
+				"value": "Add Owner",
+				"uriTemplate": "/team-management/owner",
+				"roles": [
+					{
+						"id": 1,
+						"name": "Admin"
+					},
+					{
+						"id": 4,
+						"name": "TeamOwner"
+					},
+					{
+						"id": 5,
+						"name": "TeamAdmin"
+					}
+				]
+			},
+			{
+				"name": "view-team-admins",
+				"value": "Admins",
+				"uriTemplate": "/team-management/admin",
+				"roles": [
+					{
+						"id": 1,
+						"name": "Admin"
+					},
+					{
+						"id": 2,
+						"name": "AuctionAdmin"
+					},
+					{
+						"id": 3,
+						"name": "Auctioneer"
+					},
+					{
+						"id": 4,
+						"name": "TeamOwner"
+					},
+					{
+						"id": 5,
+						"name": "TeamAdmin"
+					},
+					{
+						"id": 6,
+						"name": "StatsAdmin"
+					},
+					{
+						"id": 7,
+						"name": "Player"
+					}
+				],
+				"subMenus": [
+					{
+						"name": "view-team-admin",
+						"value": "View Team Admin",
+						"uriTemplate": "/team-management/admin/{ownerId}",
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							},
+							{
+								"id": 2,
+								"name": "AuctionAdmin"
+							},
+							{
+								"id": 3,
+								"name": "Auctioneer"
+							},
+							{
+								"id": 4,
+								"name": "TeamOwner"
+							},
+							{
+								"id": 5,
+								"name": "TeamAdmin"
+							},
+							{
+								"id": 6,
+								"name": "StatsAdmin"
+							},
+							{
+								"id": 7,
+								"name": "Player"
+							}
+						],
+						"visible": false,
+						"subMenus": [
+							{
+								"name": "upload-team-admin-image",
+								"value": "Upload Owner Image",
+								"uriTemplate": "/team-management/admin/{adminId}/image",
+								"visible": false,
+								"roles": [
+									{
+										"id": 5,
+										"name": "TeamAdmin"
+									}
+								]
+							},
+							{
+								"name": "change-team-admin-image",
+								"value": "Change Owner Image",
+								"uriTemplate": "/team-management/admin/{adminId}/image/{imageId}",
+								"visible": false,
+								"roles": [
+									{
+										"id": 5,
+										"name": "TeamAdmin"
+									}
+								]
+							},
+							{
+								"name": "change-team-admin-password",
+								"value": "Change Team Owner Password",
+								"uriTemplate": "/team-management/admin/{ownerId}/password",
+								"visible": false,
+								"roles": [
+									{
+										"id": 5,
+										"name": "TeamAdmin"
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "edit-team-admin",
+						"value": "Edit Team Admin",
+						"uriTemplate": "/team-management/admin/{adminId}",
+						"visible": false,
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							},
+							{
+								"id": 4,
+								"name": "TeamOwner"
+							},
+							{
+								"id": 5,
+								"name": "TeamAdmin"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "add-team-admin",
+				"value": "Add Admin",
+				"uriTemplate": "/team-management/admin",
+				"roles": [
+					{
+						"id": 1,
+						"name": "Admin"
+					},
+					{
+						"id": 4,
+						"name": "TeamOwner"
+					},
+					{
+						"id": 5,
+						"name": "TeamAdmin"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "approvals-home",
+		"value": "Team Approvals",
+		"uriTemplate": "/approval-management/approval/home",
+		"roles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			},
+			{
+				"id": 4,
+				"name": "TeamOwner"
+			}
+		],
+		"subMenus": [
+			{
+				"name": "approvals",
+				"value": "Team Approvals",
+				"uriTemplate": "/approval-management/approval",
+				"roles": [
+					{
+						"id": 1,
+						"name": "Admin"
+					},
+					{
+						"id": 4,
+						"name": "TeamOwner"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "players-home",
+		"value": "Players",
+		"uriTemplate": "/player-management/home",
+		"roles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			},
+			{
+				"id": 2,
+				"name": "AuctionAdmin"
+			},
+			{
+				"id": 3,
+				"name": "Auctioneer"
+			},
+			{
+				"id": 4,
+				"name": "TeamOwner"
+			},
+			{
+				"id": 5,
+				"name": "TeamAdmin"
+			},
+			{
+				"id": 6,
+				"name": "StatsAdmin"
+			},
+			{
+				"id": 7,
+				"name": "Player"
+			}
+		],
+		"subMenus": [
+			{
+				"name": "view-players",
+				"value": "View Players",
+				"uriTemplate": "/player-management/player",
+				"roles": [
+					{
+						"id": 1,
+						"name": "Admin"
+					},
+					{
+						"id": 2,
+						"name": "AuctionAdmin"
+					},
+					{
+						"id": 3,
+						"name": "Auctioneer"
+					},
+					{
+						"id": 4,
+						"name": "TeamOwner"
+					},
+					{
+						"id": 5,
+						"name": "TeamAdmin"
+					},
+					{
+						"id": 6,
+						"name": "StatsAdmin"
+					},
+					{
+						"id": 7,
+						"name": "Player"
+					}
+				],
+				"subMenus": [
+					{
+						"name": "view-player",
+						"value": "View Player",
+						"uriTemplate": "/player-management/player/{playerId}",
+						"visible": false,
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							},
+							{
+								"id": 2,
+								"name": "AuctionAdmin"
+							},
+							{
+								"id": 3,
+								"name": "Auctioneer"
+							},
+							{
+								"id": 4,
+								"name": "TeamOwner"
+							},
+							{
+								"id": 5,
+								"name": "TeamAdmin"
+							},
+							{
+								"id": 6,
+								"name": "StatsAdmin"
+							},
+							{
+								"id": 7,
+								"name": "Player"
+							}
+						],
+						"subMenus": [
+							{
+								"name": "upload-player-image",
+								"value": "Upload Player Image",
+								"uriTemplate": "/player-management/player/{playerId}",
+								"visible": false,
+								"roles": [
+									{
+										"id": 7,
+										"name": "Player"
+									}
+								]
+							},
+							{
+								"name": "change-player-image",
+								"value": "Change Player Image",
+								"uriTemplate": "/player-management/player/{playerId}",
+								"visible": false,
+								"roles": [
+									{
+										"id": 7,
+										"name": "Player"
+									}
+								]
+							},
+							{
+								"name": "change-player-password",
+								"value": "Change Player Password",
+								"uriTemplate": "/player-management/player/{playerId}/password",
+								"visible": false,
+								"roles": [
+									{
+										"id": 7,
+										"name": "Player"
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "edit-player",
+						"value": "Edit Player",
+						"uriTemplate": "/player-management/player/{playerId}",
+						"visible": false,
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							},
+							{
+								"id": 7,
+								"name": "Player"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "cricket-stats",
+				"value": "Cricket Statistics",
+				"uriTemplate": "/player-management/stats",
+				"roles": [
+					{
+						"id": 1,
+						"name": "Admin"
+					},
+					{
+						"id": 2,
+						"name": "AuctionAdmin"
+					},
+					{
+						"id": 3,
+						"name": "Auctioneer"
+					},
+					{
+						"id": 4,
+						"name": "TeamOwner"
+					},
+					{
+						"id": 5,
+						"name": "TeamAdmin"
+					},
+					{
+						"id": 6,
+						"name": "StatsAdmin"
+					},
+					{
+						"id": 7,
+						"name": "Player"
+					}
+				],
+				"subMenus": [
+					{
+						"name": "cricket-stat",
+						"value": "Cricket Statistic",
+						"uriTemplate": "/player-management/stats/{statsId}",
+						"visible": false,
+						"roles": [
+							{
+								"id": 1,
+								"name": "Admin"
+							},
+							{
+								"id": 2,
+								"name": "AuctionAdmin"
+							},
+							{
+								"id": 3,
+								"name": "Auctioneer"
+							},
+							{
+								"id": 4,
+								"name": "TeamOwner"
+							},
+							{
+								"id": 5,
+								"name": "TeamAdmin"
+							},
+							{
+								"id": 6,
+								"name": "StatsAdmin"
+							},
+							{
+								"id": 7,
+								"name": "Player"
+							}
+						]
+					},
+					{
+						"name": "edit-cricket-stat",
+						"value": "Edit Cricket Statistic",
+						"uriTemplate": "/player-management/stats/{statsId}",
+						"visible": false,
+						"roles": [
+							{
+								"id": 6,
+								"name": "StatsAdmin"
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "add-cricket-stats",
+				"value": "Add Cricket Statistics",
+				"uriTemplate": "/player-management/stats",
+				"roles": [
+					{
+						"id": 6,
+						"name": "StatsAdmin"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "contact-us",
+		"value": "Contact Us",
+		"uriTemplate": "/contact-us",
+		"roles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			},
+			{
+				"id": 2,
+				"name": "AuctionAdmin"
+			},
+			{
+				"id": 3,
+				"name": "Auctioneer"
+			},
+			{
+				"id": 4,
+				"name": "TeamOwner"
+			},
+			{
+				"id": 5,
+				"name": "TeamAdmin"
+			},
+			{
+				"id": 6,
+				"name": "StatsAdmin"
+			},
+			{
+				"id": 7,
+				"name": "Player"
+			}
+		]
+	},
+	{
+		"name": "about-us",
+		"value": "About Us",
+		"uriTemplate": "/about-us",
+		"direction": "right",
+		"roles": [
+			{
+				"id": 1,
+				"name": "Admin"
+			},
+			{
+				"id": 2,
+				"name": "AuctionAdmin"
+			},
+			{
+				"id": 3,
+				"name": "Auctioneer"
+			},
+			{
+				"id": 4,
+				"name": "TeamOwner"
+			},
+			{
+				"id": 5,
+				"name": "TeamAdmin"
+			},
+			{
+				"id": 6,
+				"name": "StatsAdmin"
+			},
+			{
+				"id": 7,
+				"name": "Player"
+			}
+		]
+	}
+]

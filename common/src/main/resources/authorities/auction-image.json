@@ -1,0 +1,82 @@
+[
+  {
+    "name": "create-auction-image",
+    "operation": "create",
+    "group": "auction-image",
+    "pathPattern": "/resource-management/auction/{auctionId}/image",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      }
+    ]
+  },
+  {
+    "name": "create-auction-image-form",
+    "operation": "read",
+    "group": "auction-image",
+    "pathPattern": "/resource-management/auction/{auctionId}/image",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      }
+    ]
+  },
+  {
+    "name": "update-auction-image-form",
+    "operation": "read",
+    "group": "auction-image",
+    "pathPattern": "/resource-management/auction/{auctionId}/image/{imageId}",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      }
+    ]
+  },
+  {
+    "name": "update-auction-image",
+    "operation": "update",
+    "group": "auction-image",
+    "pathPattern": "/resource-management/auction/{auctionId}/image/{imageId}",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      }
+    ]
+  },
+  {
+    "name": "delete-auction-image",
+    "operation": "delete",
+    "group": "auction-image",
+    "pathPattern": "/resource-management/auction/{auctionId}/image/{imageId}",
+    "authorizedRoles": [
+      {
+        "id": 1,
+        "name": "Admin"
+      },
+      {
+        "id": 2,
+        "name": "AuctionAdmin"
+      }
+    ]
+  }
+]
